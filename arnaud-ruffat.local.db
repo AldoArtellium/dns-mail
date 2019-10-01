@@ -1,0 +1,18 @@
+$TTL 1h
+
+arnaud-ruffat.local. IN SOA debian.arnaud-ruffat.local. arnaudruffat.iutbeziers.fr. (
+   2018100201 ; Serial
+   3600 ; Refresh(1h)
+   3600 ; Retry(1h)
+   3600000 ; Expire(41j)
+   86400 ) ; Minimum(24h)
+
+debian IN A 10.203.0.63
+debian.arnaud-ruffat.local. IN A 10.203.0.63
+@ IN NS debian
+arnaud-ruffat.local. IN NS debian
+
+
+mail IN A 10.203.0.63
+@ IN MX 10 mail
+

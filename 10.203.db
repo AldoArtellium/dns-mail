@@ -1,0 +1,13 @@
+$TTL 1h
+
+@ IN SOA debian.arnaud-ruffat.local. root.arnaud-ruffat.local. (
+  991079290 ; serial
+  28800 ; refresh
+  14400 ; retry
+  3600000 ; expire
+  86400 ; default_ttl
+)
+
+203.10.in-addr.arpa. IN NS debian.arnaud-ruffat.local.
+63.0 IN PTR debian.arnaud-ruffat.local.
+63.0 IN MX mail.arnaud-ruffat.local.
