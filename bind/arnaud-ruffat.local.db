@@ -7,12 +7,12 @@ arnaud-ruffat.local. IN SOA debian.arnaud-ruffat.local. arnaudruffat.iutbeziers.
    3600000 ; Expire(41j)
    86400 ) ; Minimum(24h)
 
-debian IN A 10.203.0.63
-debian.arnaud-ruffat.local. IN A 10.203.0.63
+debian IN A 10.205.3.1
+debian.arnaud-ruffat.local. IN A 10.205.3.1
 @ IN NS debian
 arnaud-ruffat.local. IN NS debian
 
 
-mail IN A 10.203.0.63
+mail IN A 10.205.3.1
 @ IN MX 10 mail
 

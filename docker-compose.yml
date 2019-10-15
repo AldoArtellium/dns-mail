@@ -3,12 +3,18 @@ version: '2'
 services:
   bind:
     restart: always
-    build: .
-    network_mode: "host"
+    build: ./bind/
+    networks:
+      net205:
+        ipv4_address: 10.205.3.2
     ports:
     - "53:53/udp"
     - "53:53/tcp"
     volumes:
-    - ./named.conf:/etc/bind/named.conf
-    - ./arnaud-ruffat.local.db:/etc/bind/arnaud-ruffat.local.db
-    - ./10.203.db:/etc/bind/10.203.db
+    - ./bind/named.conf:/etc/bind/named.conf
+    - ./bind/arnaud-ruffat.local.db:/etc/bind/arnaud-ruffat.local.db
+    - ./bind/10.205.db:/etc/bind/10.205.db
+ 
+networks:
+  net205:
+    external: true
