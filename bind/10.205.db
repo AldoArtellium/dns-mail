@@ -10,4 +10,4 @@ $TTL 1h
 
 205.10.in-addr.arpa. IN NS debian.arnaud-ruffat.local.
 1.3 IN PTR debian.arnaud-ruffat.local.
-1.3 IN MX mail.arnaud-ruffat.local.
+3.3 IN MX mail.arnaud-ruffat.local.
