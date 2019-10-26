@@ -25,11 +25,14 @@ services:
       - "143:143"
       - "587:587"
       - "993:993"
+      - "110:110"
+      - "995:995"
     volumes:
       - ./mail/data:/var/mail
       - ./mail/state:/var/mail-state
       - ./mail/config/:/tmp/docker-mailserver/
     environment:
+      - ENABLE_POP3=1
       - ENABLE_SPAMASSASSIN=1
       - ENABLE_CLAMAV=1
       - ENABLE_FAIL2BAN=1
